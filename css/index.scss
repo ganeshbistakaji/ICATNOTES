@@ -1,0 +1,167 @@
+$bg: #0A0A0A;
+$red: #FF6F61;
+$green: #008080;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    cursor: url('../images/cursor/normal.png'),auto;
+}
+
+body {
+    background-color: $bg;
+    color: white;
+
+    .navbar {
+        background-color: transparent;
+        border-bottom: 2px solid white;
+
+        .container-fluid {
+
+            .navbar-brand {
+                color: white;
+                font-weight: 900;
+                color: $green;
+
+                &:hover {
+                    cursor: url('../images/cursor/hover.png'),auto;
+                }
+            }
+
+            .collapse {
+                ul {
+                    li {
+                        a {
+                            color: white;
+                            font-weight: 900;
+                            transition: all 0.3s ease;
+
+                            &:hover {
+                                opacity: 50%;
+                                cursor: url('../images/cursor/hover.png'),auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-toggler {
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28, 255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                }
+            }
+        }
+    }
+
+    .body {
+        .box {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .row {
+                .colu {
+                    .header {
+                        font-weight: 900;
+                        font-size: 64px;
+                        text-align: center;
+                    }
+
+                    .desc {
+                        font-size: 32px;
+                        text-align: center;
+                    }
+
+                    .notice {
+                        opacity: 25%;
+                        text-align: center;
+                        font-size: 16px;
+                        margin-top: 16px;
+                    }
+                }
+
+                .colu-btn {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    
+                    .green {
+                        margin-top: 16px;
+                        font-size: 16px;
+                        font-weight: 900;
+                        color: white;
+                        background-color: $green;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        border: 2px solid $green;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: transparent;
+                            border: 2px solid $green;
+                            cursor: url('../images/cursor/hover.png'),auto;
+                        }
+                    }
+
+                    .red {
+                        margin-top: 16px;
+                        font-size: 16px;
+                        font-weight: 900;
+                        color: white;
+                        background-color: $red;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        border: 2px solid $red;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: transparent;
+                            border: 2px solid $red;
+                            cursor: url('../images/cursor/hover.png'),auto;
+                        }
+                    }
+
+                }
+
+                .col-wp {
+                    margin-top: 16px;
+                    display: flex;
+                        justify-content: center;
+                    .wp {
+                        font-size: 16px;
+                        font-weight: 900;
+                        color: white;
+                        background-color: $green;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        border: 2px solid $green;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: transparent;
+                            border: 2px solid $green;
+                            cursor: url('../images/cursor/hover.png'),auto;
+                        }
+
+                    }
+                }
+
+                @media only screen and (max-width: 991px){
+                    .colu {
+                        .header {
+                            font-weight: 900;
+                            font-size: 32px;
+                            text-align: center;
+
+                        }
+    
+                        .desc {
+                            font-size: 24px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
