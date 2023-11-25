@@ -1,5 +1,5 @@
 
-var audio = new Audio('../audio/sus.mp3'); 
+var audio = new Audio('./audio/sus.mp3'); 
 audio.loop = true;
 
 var waveElement = document.getElementById('wave');
