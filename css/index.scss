@@ -1,11 +1,11 @@
-$bg: #0A0A0A;
-$red: #FF6F61;
+$bg: #0a0a0a;
+$red: #ff6f61;
 $green: #008080;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    cursor: url('../images/cursor/normal.png'),auto;
+    cursor: url("../images/cursor/normal.png"), auto;
 }
 
 body {
@@ -17,14 +17,13 @@ body {
         border-bottom: 2px solid white;
 
         .container-fluid {
-
             .navbar-brand {
                 color: white;
                 font-weight: 900;
                 color: $green;
 
                 &:hover {
-                    cursor: url('../images/cursor/hover.png'),auto;
+                    cursor: url("../images/cursor/hover.png"), auto;
                 }
             }
 
@@ -38,7 +37,7 @@ body {
 
                             &:hover {
                                 opacity: 50%;
-                                cursor: url('../images/cursor/hover.png'),auto;
+                                cursor: url("../images/cursor/hover.png"), auto;
                             }
                         }
                     }
@@ -65,6 +64,39 @@ body {
                         font-weight: 900;
                         font-size: 64px;
                         text-align: center;
+
+                        .wave {
+                            animation: waving 2.5s infinite; 
+                            transform-origin: 70% 70%;
+                            display: inline-block;
+                        }
+
+                        @keyframes waving {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+                            10% {
+                                transform: rotate(14deg);
+                            } 
+                            20% {
+                                transform: rotate(-8deg);
+                            }
+                            30% {
+                                transform: rotate(14deg);
+                            }
+                            40% {
+                                transform: rotate(-4deg);
+                            }
+                            50% {
+                                transform: rotate(10deg);
+                            }
+                            60% {
+                                transform: rotate(0deg);
+                            }
+                            100% {
+                                transform: rotate(0deg);
+                            }
+                        }
                     }
 
                     .desc {
@@ -84,7 +116,7 @@ body {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
-                    
+
                     .green {
                         margin-top: 16px;
                         font-size: 16px;
@@ -99,7 +131,7 @@ body {
                         &:hover {
                             background-color: transparent;
                             border: 2px solid $green;
-                            cursor: url('../images/cursor/hover.png'),auto;
+                            cursor: url("../images/cursor/hover.png"), auto;
                         }
                     }
 
@@ -117,16 +149,15 @@ body {
                         &:hover {
                             background-color: transparent;
                             border: 2px solid $red;
-                            cursor: url('../images/cursor/hover.png'),auto;
+                            cursor: url("../images/cursor/hover.png"), auto;
                         }
                     }
-
                 }
 
                 .col-wp {
                     margin-top: 16px;
                     display: flex;
-                        justify-content: center;
+                    justify-content: center;
                     .wp {
                         font-size: 16px;
                         font-weight: 900;
@@ -140,21 +171,19 @@ body {
                         &:hover {
                             background-color: transparent;
                             border: 2px solid $green;
-                            cursor: url('../images/cursor/hover.png'),auto;
+                            cursor: url("../images/cursor/hover.png"), auto;
                         }
-
                     }
                 }
 
-                @media only screen and (max-width: 991px){
+                @media only screen and (max-width: 991px) {
                     .colu {
                         .header {
                             font-weight: 900;
                             font-size: 32px;
                             text-align: center;
-
                         }
-    
+
                         .desc {
                             font-size: 24px;
                             text-align: center;

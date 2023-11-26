@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  cursor: url("../images/cursor/normal.png"), auto;
+}
+
+body {
+  background-color: #0a0a0a;
+}
+body .box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+}
+body .box img {
+  width: 50%;
+}
+body .box .back {
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+body .box .back:hover {
+  opacity: 50%;
+  cursor: url("../images/cursor/hover.png"), auto;
+}
+@media only screen and (max-width: 991px) {
+  body .box img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=404.css.map */

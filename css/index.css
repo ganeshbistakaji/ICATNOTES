@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #0A0A0A;
+  background-color: #0a0a0a;
   color: white;
 }
 body .navbar {
@@ -42,6 +42,37 @@ body .body .box .row .colu .header {
   font-size: 64px;
   text-align: center;
 }
+body .body .box .row .colu .header .wave {
+  animation: waving 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes waving {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 body .body .box .row .colu .desc {
   font-size: 32px;
   text-align: center;
@@ -78,15 +109,15 @@ body .body .box .row .colu-btn .red {
   font-size: 16px;
   font-weight: 900;
   color: white;
-  background-color: #FF6F61;
+  background-color: #ff6f61;
   margin-left: 10px;
   margin-right: 10px;
-  border: 2px solid #FF6F61;
+  border: 2px solid #ff6f61;
   transition: all 0.3s ease;
 }
 body .body .box .row .colu-btn .red:hover {
   background-color: transparent;
-  border: 2px solid #FF6F61;
+  border: 2px solid #ff6f61;
   cursor: url("../images/cursor/hover.png"), auto;
 }
 body .body .box .row .col-wp {

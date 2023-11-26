@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/404.css">
+    <title>404 ERROR</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1>OOPS!</h1>
+        <h3>Looks like the page you're looking for isn't availabe</h3>
+        <h4>So please enjoy the cat spinning till then 😀</h4>
+        <a href="index.html" class="back">Back</a>
+        <img src="images/gif/cat_spin.gif" alt="" draggable="false">
+    </div>
+
+    <audio id="cataudio" src="audio/cat_spin.mp3" style="display: none;"></audio>
+
+    <script>
+        const catSpin = document.getElementById('cataudio');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            catSpin.loop = true;
+            catSpin.play();
+        });
+    </script>
+</body>
+
+</html>
